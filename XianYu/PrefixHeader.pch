@@ -1,0 +1,163 @@
+//
+//  PrefixHeader.pch
+//  XianYu
+//
+//  Created by lmh on 2019/6/18.
+//  Copyright © 2019 lmh. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define XianYu_Bugly_Id @"92bba94627"
+#define XianYu_Um_Key @"5d08581e570df398e7001158"
+
+#define XY_APPID @"10002"
+
+#import "RequestHeader.h"
+#import "JSFactory.h"
+#import "DefineEnum.h"
+#import <Masonry.h>
+#import <ReactiveObjC.h>
+#import <UIImageView+WebCache.h>
+#import "UIButton+Extension.h"
+#import "UILabel+Solid.h"
+#import "NSString+StringColor.h"
+#import "NSString+StringHeight.h"
+#import "UIViewController+Extension.h"
+#import <MJRefresh.h>
+#import "SDWebImage.h"
+
+#import <SVProgressHUD.h>
+#import "NetworkManager.h"
+#import "ToastView.h"
+#import <JSONKit.h>
+#import <Reachability.h>
+#import "UserManager.h"
+#import "AreaModel.h"
+#import "CityModel.h"
+#import "JobTypeModel.h"
+
+#import <RongIMKit/RongIMKit.h>
+#import <RongIMKit/RongIMKit.h>
+#import "IMManager.h"
+#import <AliyunOSSiOS/OSSService.h>
+#import "OSSManager.h"
+
+
+#import "XYActionSheetViewController.h"
+#import "XYDobuleASViewController.h"
+#import "XYAlertDatePickerView.h"
+
+#import <MJExtension.h>
+
+#import "XYTagsView.h"
+#import "XYConstUtils.h"
+#import "CommanTool.h"
+#import "WKWebViewController.h"
+#import <RPSDK/RPSDK.h>
+#import "XianYu-Swift.h"
+
+#import "CALayer+Extension.h"
+
+
+
+
+
+
+
+
+#define KScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define KScreenWidth   [UIScreen mainScreen].bounds.size.width
+//色值
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define UIColorFromRGBA(rgbValue,sec) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:sec]
+#define  RGBColor(x,y,z)  [UIColor colorWithRed:x/255.0 green:y/255.0 blue:z/255.0 alpha:1.0]
+#define  RGBAlpahColor(x,y,z,sec)  [UIColor colorWithRed:x/255.0 green:y/255.0 blue:z/255.0 alpha:sec]
+
+#define Color_White [UIColor whiteColor]
+
+//xiant颜色
+#define Color_Line_EBEBEB UIColorFromRGB(0xEBEBEB)
+
+//绿色
+#define Color_Blue_32A060 UIColorFromRGB(0x32A060)
+
+//黑色
+#define Color_Black_323232 UIColorFromRGB(0x323232)
+#define Color_Black_A5A5A5 UIColorFromRGB(0xA5A5A5)
+#define Color_Black_464646 UIColorFromRGB(0x464646)
+#define Color_Black_878787 UIColorFromRGB(0x878787)
+#define Color_Orange_FF794F UIColorFromRGB(0xFF794F)
+#define Color_Green_2886FE UIColorFromRGB(0x2886FE)
+#define Color_Green_E9F3FF UIColorFromRGB(0xE9F3FF)
+#define Color_Green_288fFE UIColorFromRGB(0x288fFE)
+#define Color_Green_EFF7F2 UIColorFromRGB(0xEFF7F2)
+#define Color_Gray_828282 UIColorFromRGB(0x828282)
+#define Color_Ground_FAFAFA UIColorFromRGB(0xFAFAFA)
+#define Color_Ground_F5F5F5 UIColorFromRGB(0xF5F5F5)
+#define Color_Red_ED4545 UIColorFromRGB(0xED4545)
+
+#define Color_Cell_Line UIColorFromRGB(0xEAEAEA)
+
+
+
+//750状态下字体适配
+#define font750(x) ((x)/ 750.0f) * KScreenWidth
+//750状态下像素适配宏
+#define Anno750(x) ((x)/ 750.0f) * KScreenWidth
+
+
+
+
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+
+
+#pragma mark --------- 简易宏
+//字符串
+#define FORMAT(f, ...)      [NSString stringWithFormat:f, ## __VA_ARGS__]
+//在主线程上运行
+#define kDISPATCH_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
+
+
+#define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
+
+//规避空值
+#define INCASE_EMPTY(str, replace) \
+( ([(str) length]==0)?(replace):(str) )
+
+#define Appdelegate_To_C_HomeViewController  @"Appdelegate_To_C_HomeViewController"
+#define NetErrorTokenToLoginViewController @"NetErrorByTokenUnvalidToPresentLoginVC"
+#define NetErrorLoadFailure                @"NetErrorLoadFailureToRefresh" //无网络
+
+
+//导航栏高度
+#define NavRectHeight ([[UIApplication sharedApplication] statusBarFrame].size.height+44)
+//导航栏去掉20的高度
+#define AppStatusBar [[UIApplication sharedApplication] statusBarFrame].size.height
+#define AppTabbarHeight ((AppStatusBar==44)? 83 : 49)
+
+#define WXAPPID @"wx6374dcf086c13d2b"
+
+#define AES_Body_Key @"xi88yujob66"
+
+#define MD5_Key @"Gxy1zaQtCPUnd886jIrujb6gZvfShvNB"
+
+#define XY_AppleStore_Appid @"MC_App_ID"
+
+
+#define App_ResponeCode_Success @"0" //请求成功
+#define App_ResponeCode_TimestampExpires @"402011" //时间戳过期
+
+#define App_ResponeCode_InvalidToken @"402002" //无效token
+#define App_ResponeCode_OverdueToken @"402003" //过期token
+
+
+#endif /* PrefixHeader_pch */

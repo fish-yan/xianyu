@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4BU-jc-pLn">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="x4r-zw-Nxx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4BU-jc-pLn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DNu-Zu-CGl">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.1960784314" green="0.62745098040000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DRV-ki-1HK" kind="relationship" relationship="viewControllers" id="AvB-mJ-8Si"/>
+                        <segue destination="iYD-2w-EBs" kind="relationship" relationship="viewControllers" id="q8G-Fz-MG3"/>
+                        <segue destination="lKx-mk-MLd" kind="relationship" relationship="viewControllers" id="v9f-hV-zFf"/>
+                        <segue destination="P7o-kj-c2a" kind="relationship" relationship="viewControllers" id="sbZ-U3-iDn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yh-Vc-fx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324.63768115942031" y="-582.58928571428567"/>
+        </scene>
+        <!--BJob-->
+        <scene sceneID="zV1-ou-o3T">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65l-Sp-GAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="BJob" id="DRV-ki-1HK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="职位" image="icon_tabbar_b_job" selectedImage="icon_tabbar_b_job_select" id="arL-aC-bh9"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="854" y="-736"/>
+        </scene>
+        <!--BResume-->
+        <scene sceneID="qU8-Q7-PVj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="coz-0Q-Kde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="BResume" id="iYD-2w-EBs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="简历" image="icon_tabbar_b_resume" selectedImage="icon_tabbar_b_resume_select" id="GUy-8Z-wLe"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="854" y="-625"/>
+        </scene>
+        <!--BNews-->
+        <scene sceneID="p1j-LW-7u2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwc-qY-wBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="BNews" id="lKx-mk-MLd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" image="icon_tabbar_b_news" selectedImage="icon_tabbar_b_news_select" id="k5t-I0-ir1"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="854" y="-544"/>
+        </scene>
+        <!--BMine-->
+        <scene sceneID="Ihm-7i-UzI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3I-R4-Ckw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="BMine" id="P7o-kj-c2a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="icon_tabba_c_mine" selectedImage="icon_tabbar_b_mien_select" id="EnU-CE-I20"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="854" y="-487"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_tabba_c_mine" width="27" height="27"/>
+        <image name="icon_tabbar_b_job" width="21" height="21"/>
+        <image name="icon_tabbar_b_job_select" width="27" height="27"/>
+        <image name="icon_tabbar_b_mien_select" width="27" height="27"/>
+        <image name="icon_tabbar_b_news" width="21" height="21"/>
+        <image name="icon_tabbar_b_news_select" width="27.5" height="27"/>
+        <image name="icon_tabbar_b_resume" width="21" height="21"/>
+        <image name="icon_tabbar_b_resume_select" width="27" height="27"/>
+    </resources>
+</document>

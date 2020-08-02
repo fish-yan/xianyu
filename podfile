@@ -1,0 +1,37 @@
+platform :ios, ‘9.0’
+target ‘XianYu’ do
+pod 'AFNetworking', '~> 3.2.1'
+pod 'MJRefresh', '~> 3.1.16'
+pod 'Masonry', '~> 1.1.0'
+pod 'IQKeyboardManager'
+pod 'SDWebImage'
+pod 'ReactiveObjC', '~> 3.1.0'
+pod 'SVProgressHUD', '~> 2.2.5'
+pod 'Reachability', '~> 3.2'
+pod 'JSONKit-NoWarning', '~> 1.2'
+pod 'YYModel', '~> 1.0.4'
+pod 'Bugly'
+pod 'MJExtension'
+pod 'UMCCommon'
+pod 'UMCAnalytics'
+pod 'SDCycleScrollView', '~> 1.75'
+
+pod 'RongCloudIM/IMLib', '~> 2.8.3'
+pod 'RongCloudIM/IMKit', '~> 2.8.3' 
+
+
+pod 'AMapLocation-NO-IDFA'
+pod 'AMap2DMap-NO-IDFA'
+pod 'AMapSearch-NO-IDFA'
+
+pod 'FLAnimatedImage', '~> 1.0.12’
+
+pod 'JPush'
+
+pod 'AliyunOSSiOS'
+
+pod 'PGDatePicker'
+
+pod 'UMCShare/Social/ReducedWeChat'
+
+end

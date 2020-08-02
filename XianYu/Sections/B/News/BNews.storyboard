@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQ9-32-K2R">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--消息-->
+        <scene sceneID="Rac-jb-5py">
+            <objects>
+                <viewController id="dKd-GM-dW4" customClass="B_NewsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="00N-ma-Tgx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ycX-cL-hBz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="mlV-GJ-6aj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbc-iF-fIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.92753623188412" y="-134.59821428571428"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="3Ez-Fx-bZU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VQ9-32-K2R" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" image="icon_tabbar_b_news" selectedImage="icon_tabbar_b_news_select" id="el6-eT-rAA"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" shadowImage="clear" id="89m-G9-p8M">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dKd-GM-dW4" kind="relationship" relationship="rootViewController" id="M3Z-Jw-K8t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bP-SI-t3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="-134.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clear" width="18" height="18"/>
+        <image name="icon_tabbar_b_news" width="21" height="21"/>
+        <image name="icon_tabbar_b_news_select" width="27.5" height="27"/>
+    </resources>
+</document>
